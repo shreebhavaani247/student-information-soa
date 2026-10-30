@@ -1,0 +1,23 @@
+[
+  {
+    "studentId": "STU101",
+    "name": "Ananya Sharma",
+    "department": "Computer Science and Engineering",
+    "year": 3,
+    "email": "ananya@example.com"
+  },
+  {
+    "studentId": "STU102",
+    "name": "Rahul Kumar",
+    "department": "Information Technology",
+    "year": 3,
+    "email": "rahul@example.com"
+  },
+  {
+    "studentId": "STU103",
+    "name": "Priya Nair",
+    "department": "Computer Science and Engineering",
+    "year": 4,
+    "email": "priya@example.com"
+  }
+]

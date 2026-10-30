@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CampusTrack | Library</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">CampusTrack</div>
+    <span class="service-badge">SOA-Enabled Application</span>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">LIBRARY MANAGEMENT</p>
+      <h1>Student Library Portal</h1>
+      <p class="subtitle">
+        Access student information through the shared Student Information Service
+        and view a sample library account.
+      </p>
+    </section>
+
+    <section class="search-card">
+      <label for="studentId">Student ID</label>
+      <div class="search-row">
+        <input
+          type="text"
+          id="studentId"
+          placeholder="e.g. STU101"
+          autocomplete="off"
+        />
+        <button id="searchBtn" type="button">Find Student</button>
+      </div>
+      <p class="hint">Try STU101, STU102, or STU103.</p>
+      <p id="message" role="status" aria-live="polite"></p>
+    </section>
+
+    <section id="studentCard" class="student-card hidden">
+      <div class="card-heading">
+        <div>
+          <p class="eyebrow">STUDENT PROFILE</p>
+          <h2 id="studentName"></h2>
+          <p id="studentIdLabel" class="muted"></p>
+        </div>
+        <span class="status-badge">Record Found</span>
+      </div>
+
+      <div class="details-grid">
+        <div class="detail">
+          <span>Department</span>
+          <strong id="department"></strong>
+        </div>
+        <div class="detail">
+          <span>Academic Year</span>
+          <strong id="year"></strong>
+        </div>
+        <div class="detail">
+          <span>Email</span>
+          <strong id="email"></strong>
+        </div>
+      </div>
+
+      <div class="library-panel">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">SAMPLE LIBRARY ACCOUNT</p>
+            <h3>Library Overview</h3>
+          </div>
+          <span class="book-icon" aria-hidden="true">▤</span>
+        </div>
+
+        <div class="library-stats">
+          <div class="stat">
+            <span>Books Issued</span>
+            <strong>2</strong>
+          </div>
+          <div class="stat">
+            <span>Books Returned</span>
+            <strong>5</strong>
+          </div>
+          <div class="stat">
+            <span>Outstanding Fines</span>
+            <strong>₹0</strong>
+          </div>
+        </div>
+
+        <p class="library-note">
+          These are demonstration values, not live records from a library database.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <span>CampusTrack Library</span>
+      <span>Powered by the Student Information Service</span>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CampusTrack | Attendance</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">CampusTrack</div>
+    <span class="service-badge">SOA-Enabled Application</span>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">ATTENDANCE MANAGEMENT</p>
+      <h1>Student Attendance Portal</h1>
+      <p class="subtitle">
+        Retrieve student information through the shared Student Information Service.
+      </p>
+    </section>
+
+    <section class="search-card">
+      <label for="studentId">Student ID</label>
+      <div class="search-row">
+        <input
+          type="text"
+          id="studentId"
+          placeholder="e.g. STU101"
+          autocomplete="off"
+        />
+        <button id="searchBtn" type="button">Find Student</button>
+      </div>
+      <p class="hint">Try STU101, STU102, or STU103.</p>
+      <p id="message" role="status" aria-live="polite"></p>
+    </section>
+
+    <section id="studentCard" class="student-card hidden">
+      <div class="card-heading">
+        <div>
+          <p class="eyebrow">STUDENT PROFILE</p>
+          <h2 id="studentName"></h2>
+          <p id="studentIdLabel" class="muted"></p>
+        </div>
+        <span class="status-badge">Record Found</span>
+      </div>
+
+      <div class="details-grid">
+        <div class="detail">
+          <span>Department</span>
+          <strong id="department"></strong>
+        </div>
+        <div class="detail">
+          <span>Academic Year</span>
+          <strong id="year"></strong>
+        </div>
+        <div class="detail">
+          <span>Email</span>
+          <strong id="email"></strong>
+        </div>
+      </div>
+
+      <div class="attendance-panel">
+        <div>
+          <p class="eyebrow">SAMPLE ATTENDANCE RECORD</p>
+          <h3>Current Semester</h3>
+        </div>
+        <div class="attendance-value">92%</div>
+        <p class="attendance-note">
+          Demonstration data for the SOA assignment; not retrieved from a real attendance database.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <span>CampusTrack Attendance</span>
+      <span>Powered by the Student Information Service</span>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
